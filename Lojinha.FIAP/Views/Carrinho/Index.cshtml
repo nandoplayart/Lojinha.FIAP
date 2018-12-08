@@ -1,0 +1,9 @@
+﻿@model Lojinha.FIAP.Core.Models.Carrinho
+@{
+    //ViewBag["title"] = "home Page";
+ }
+
+<span>
+    <span class="col-md-7">Total Itens: @Model.Itens.Sum(x=> x.Quantidade)</span>
+    <span class="col-md-7">R$: @Model.Itens.Sum(x=> x.Produto.Preco)</span>
+</span>
